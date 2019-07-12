@@ -1,0 +1,19 @@
+/* *app.wxss*
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+}  */
+
+.container {
+  background-color: #fff;
+  height: 100vh;
+  display: flex; /*弹性盒子布局*/
+  flex-direction: column; /*使元素排列变为垂直的*/
+  justify-content: space-around; /*使元素在垂直方向上均匀分布*/
+  align-items: center; /*元素居中*/
+}

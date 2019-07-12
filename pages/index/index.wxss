@@ -1,0 +1,22 @@
+.container{
+  background-color: #eee;
+  height: 100vh;
+
+  display:flex; /*弹性盒子布局*/
+  flex-direction: column;/*使元素排列变为垂直的*/
+  justify-content: space-around; /*使元素在垂直方向上均匀分布*/
+  align-items: center;/*元素居中*/
+}
+
+.about-banner{
+  width: 375rpx;  /*小程序规定所有的机型的宽度都为750rpx*/ 
+  height: 375rpx; /*在Iphone6中，10px=20rpx*/
+  border-radius: 50%;
+}
+
+.nav-default{
+  color: blue;
+}
+.nav-hover{
+  color: red;
+}
