@@ -1,2 +1,7 @@
-<!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml id={{mid}}</text>
+<view class='container'>
+  <image class='detail-image' src='{{movie.img}}'></image>
+  <text style='font-weight:bold;font-size:50rpx;'>{{movie.name}}</text>
+  <text>评价人数：{{movie.ratingCountShow}}</text>
+  <text>评分：{{movie.overallRating}}</text>
+  <text>简介：{{movie.story}}</text>
+</view>

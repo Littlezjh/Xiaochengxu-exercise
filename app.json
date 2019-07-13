@@ -18,14 +18,14 @@
       {
         "text": "每日推荐",
         "pagePath": "pages/weekly/weekly",
-        "iconPath": "images/icons/b1.png",
-        "selectedIconPath": "images/icons/b2.png"
+        "iconPath": "Images/icons/bb1.png",
+        "selectedIconPath": "Images/icons/bb2.png"
       },
       {
         "text": "关于",
         "pagePath": "pages/index/index",
-        "iconPath": "images/icons/a1.png",
-        "selectedIconPath": "images/icons/a2.png"
+        "iconPath": "Images/icons/a1.png",
+        "selectedIconPath": "Images/icons/a2.png"
       }
     ],
     "color": "#000",

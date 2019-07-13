@@ -1,1 +1,5 @@
 /* pages/detail/detail.wxss */
+.detail-image{
+  width:300rpx;
+  height: 300rpx
+}

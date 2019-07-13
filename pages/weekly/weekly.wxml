@@ -3,7 +3,6 @@
     <swiper-item class='movie' wx:for="{{weeklyMovieList}}">
       <view class='container movie-card' bindtap='f1' data-movie-id="{{item.id}}">
         <image class='movie-image' src='{{item.imagePath}}'></image>
-        <text>{{item.id}}</text>
         <text>第{{index+1}}周：{{item.name}}</text>
         <text>点评：{{item.comment}}</text>
         <text wx:if="{{item.isHighlyRecommended}}" style='font-size:26px;color:red;'>强烈推荐</text>
