@@ -28,6 +28,9 @@ Page({
             that.setData({
               movie: res.data.data.basic
             })
+            wx.setNavigationBarTitle({
+              title: res.data.data.basic.name,
+            })
             wx.hideNavigationBarLoading()
           }
         },
@@ -81,6 +84,8 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+    return{
+      title:"向你推荐"+this.data.movie.name,
+    }
   }
 })

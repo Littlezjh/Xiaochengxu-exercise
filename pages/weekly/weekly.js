@@ -10,28 +10,28 @@ Page({
       comment: "最精彩的剧本，最真实的黑帮电影",
       imagePath: "/Images/aaa.jpg",
       isHighlyRecommended: true,
-      id:77,
+      id: 77,
     },
     weeklyMovieList: [{
         name: "泰坦尼克号",
         comment: "失去的才是永恒",
         imagePath: "/Images/aaa.jpg",
         isHighlyRecommended: false,
-         id: 11925,
+        id: 11925,
       },
       {
         name: "这个杀手不太冷",
         comment: "小萝莉U与怪蜀黍纯真灿烂的爱情故事",
         imagePath: "/Images/aaa.jpg",
         isHighlyRecommended: false,
-        id:12599,
+        id: 12599,
       },
       {
         name: "教父",
         comment: "最精彩的剧本，最真实的黑帮电影",
         imagePath: "/Images/aaa.jpg",
         isHighlyRecommended: true,
-        id:10968,
+        id: 10968,
       }
     ],
     count: 0,
@@ -43,7 +43,7 @@ Page({
    */
   onLoad: function(options) {
     this.setData({
-      currentIndex:this.data.weeklyMovieList.length-1
+      currentIndex: this.data.weeklyMovieList.length - 1
     })
   },
 
@@ -95,22 +95,24 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function() {
-
+    return{
+      title:"每周推荐"
+    }
   },
 
-  f0:function(event){
+  f0: function(event) {
     this.setData({
-      count:this.data.count+1,
-      currentIndex:this.data.weeklyMovieList.length-1
+      count: this.data.count + 1,
+      currentIndex: this.data.weeklyMovieList.length - 1
     })
   },
 
-  f1:function(event){
-    var movieID=  event.currentTarget.dataset.movieId;
+  f1: function(event) {
+    var movieID = event.currentTarget.dataset.movieId;
     wx.navigateTo({
-      url: '/pages/detail/detail?id='+movieID,
+      url: '/pages/detail/detail?id=' + movieID,
     })
   }
 
-  
+
 })
